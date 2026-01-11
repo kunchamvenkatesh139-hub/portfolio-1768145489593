@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>ighik</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #4f46e5;
+  --secondary: #0ea5e9;
+  --dark: #020617;
+  --light: #f8fafc;
+  --glass: rgba(255,255,255,0.08);
+  --border: rgba(255,255,255,0.15);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #020617, #020617);
+  color: var(--light);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background: rgba(2,6,23,0.75);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  list-style: none;
+}
+
+nav a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--secondary);
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 10%;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 60px;
+  width: 100%;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero span {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p {
+  margin-top: 15px;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+/* Profile photo */
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  animation: glow 3s linear infinite;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #020617;
+}
+
+@keyframes glow {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* Sections */
+section {
+  padding: 80px 10%;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Glass card */
+.card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 25px;
+}
+
+/* Resume buttons */
+.resume-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.resume-actions a {
+  padding: 10px 22px;
+  border-radius: 25px;
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.resume-actions a:hover {
+  transform: scale(1.05);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Skills */
+.skill span {
+  display: inline-block;
+  margin: 6px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.1);
+  font-size: 14px;
+}
+
+/* Timeline */
+.timeline {
+  border-left: 3px solid var(--primary);
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid var(--border);
+  opacity: 0.7;
+}
+
+/* Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1s;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>ighik <span></span></h1>
+      <p>hhjhb</p>
+    </div>
+
+    
+    <div class="profile-pic">
+      <img src="https://res.cloudinary.com/doi1kxw5o/image/upload/v1768125602/n3prylizft3yijxnanaq.jpg" />
+    </div>
+  </div>
+</div>
+
+
+<section id="about" class="reveal">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>abvw7yuktnhtrr
+tyitdyi
+mt
+5iv2t
+v2</p>
+
+    
+    <div class="resume-actions">
+      <a href="https://res.cloudinary.com/doi1kxw5o/image/upload/v1768125603/m32scsii4onkdcbdpyke.pdf" target="_blank">View Resume</a>
+      <a href="https://res.cloudinary.com/doi1kxw5o/image/upload/v1768125603/m32scsii4onkdcbdpyke.pdf" download>Download Resume</a>
+    </div>
+  </div>
+</section>
+
+
+<section id="skills" class="reveal">
+  <h2>Skills</h2>
+  <div class="card skill">
+    <span>bjknbvs</span><span>tnr</span><span>byr</span>
+  </div>
+</section>
+
+
+<section id="projects" class="reveal">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">wsfdxv</div><div class="card">drtyb</div><div class="card">drtybe</div><div class="card">dryb5</div>
+  </div>
+</section>
+
+
+<section id="experience" class="reveal">
+  <h2>Experience</h2>
+  <div class="timeline">
+    
+      <div class="timeline-item">
+        <p>efdsxcv</p>
+      </div>
+  </div>
+</section>
+
+
+<section id="contact" class="reveal">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>GitHub: vgtatueuighkf2</p>
+    <p>LinkedIn: cwfvejfyjf</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 ighik
+</footer>
+
+<script>
+const reveals = document.querySelectorAll(".reveal");
+function revealOnScroll() {
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const revealTop = el.getBoundingClientRect().top;
+    if (revealTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+}
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+</script>
+
+</body>
+</html>
